@@ -1,0 +1,148 @@
+/* @import url(footer.css); */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+}
+
+.berita-besar {
+    width: 869px;
+    height: 1016px;
+    flex-shrink: 0;
+    background: var(--white, #FFF);
+    margin-left: 34px;
+    box-shadow: 0px 0px 40.1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.gambar-berita {
+    max-width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gambar-berita img {
+    width: 819px;
+    height: 361px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.isi-berita p {
+    width: 810px;
+    height: 369px;
+    flex-shrink: 0;
+    color: #000;
+    margin-left: 34px;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.25%;
+}
+
+/* New styles for the small news */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.berita-kecil {
+    width: 404px;
+    height: 438px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D9D9D9;
+    margin-left: 10px;
+}
+
+.berita-kecil img {
+    width: 100%;
+    width: 380px;
+    height: 285px;
+}
+
+.berita-kecil .isi-berita p {
+    width: 341.223px;
+    color: var(--offbutton, rgba(0, 0, 0, 0.60));
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.25%; /* 16.47px */
+}
+
+/* ... Existing styles ... */
+
+.berita-besar {
+    width: 869px;
+    height: auto; /* Menggunakan ketinggian otomatis agar konten dapat mengatur ketinggian secara dinamis */
+    flex-shrink: 0;
+    background: var(--white, #FFF);
+    margin-left: 34px;
+    box-shadow: 0px 0px 40.1px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Menambahkan padding untuk memberikan ruang di sekitar konten */
+  }
+  
+  .headline {
+    margin-bottom: 20px; /* Menambahkan ruang antara judul dan konten */
+  }
+  
+  .gambar-berita img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .isi-berita {
+    color: #000;
+    margin-left: 0; /* Menghapus margin kiri */
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.25%;
+  }
+  
+  /* ... Existing styles ... */
+  /* ... Existing styles ... */
+
+.berita-besar {
+    width: 100%; /* Menggunakan lebar 100% agar menyesuaikan lebar kontennya */
+    max-width: 900px; /* Menetapkan lebar maksimum agar tidak terlalu melebar */
+    height: auto;
+    flex-shrink: 0;
+    background: var(--white, #FFF);
+    margin-left: auto; /* Menggeser container ke tengah */
+    margin-right: auto;
+    box-shadow: 0px 0px 40.1px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+  }
+  
+  .headline {
+    margin-bottom: 20px;
+  }
+  
+  .gambar-berita img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .isi-berita {
+    color: #000;
+    margin: 0; /* Menghapus margin kiri dan kanan */
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.25%;
+  }
+  
+  /* ... Existing styles ... */
+  

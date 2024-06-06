@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url(footer.css);
+
+:root {
+  --main-color: #007bff;
+  --primary: #f0fff7;
+  --black: #141414;
+  --white: #fff;
+  --bg: #f2f2f2;
+  --light-black: #666;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/client/CariPanti/readmore.jpg')
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home .content {
+  max-width: 60rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--white);
+  padding-bottom: 3.5rem;
+}
+
+.home .content h1 {
+  color: var(--white);
+}
+
+.heading{
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+}

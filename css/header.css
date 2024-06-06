@@ -1,0 +1,80 @@
+/*
+    Author: @a_devs_life
+    Youtube: https://www.youtube.com/@a_devs_life
+    Instagram: https://www.instagram.com/a_devs_life/
+    Github: https://github.com/codeboysk/a-devs-life
+*/
+
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  padding: 0.5rem;
+  border-bottom: blue 1px solid;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: blue;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background-color: blue;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: white 2px solid;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: white;
+  border: blue 2px solid;
+  color: blue;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+  color: #000;
+}
+
+@media (min-width: 991px) {
+  .navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover::before,
+  .navbar-nav .nav-item .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}

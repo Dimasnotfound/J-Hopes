@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --ocean:rgb(96, 249, 239);
+    --blue:#0551cc;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+/* .heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--ocean);
+  text-transform: uppercase;
+}
+
+.btn{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--ocean);
+  color: var(--ocean);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--ocean);
+  color: var(--white);
+} */
+
+/* footer */
+
+.footer{
+  background: var(--blue);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Adjust the column ratios as needed */
+  gap: 1.5rem ;
+}
+
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: var(--ocean);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color: var(--ocean);
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color: var(--ocean);
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid white;
+  text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color: var(--ocean);
+}
+
+
+
+/* end */
+
+
+
+
+/* Inside your style.css file */
+
+/* Add a new class for the logo box */
+.footer .box-container .box.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer .box-container .box.logo-box img {
+  /*max-width: 100%; Ensure the image doesn't exceed the container width*/
+  max-height: 280px; /* Adjust the max height as needed */
+}
+
+.footer .box-container .box {
+  text-align: center; /* Center the content within each box */
+}
+
+/* Add margin to other boxes for spacing */
+.footer .box-container .box:not(.logo-box) {
+  margin-bottom: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .footer .box-container .box.logo-box img {
+      max-height: 70px; /* Adjust the max height for smaller screens */
+  }
+}
+
+/* Inside your style.css file */
+
+.footer .box-container .box {
+  text-align: left; /* Align the text to the left within each box */
+}
+
+.footer .box-container .box h3 {
+  /* Adjust styling for the heading */
+  font-size: 2.2rem;
+  color: var(--ocean);
+  padding: 1rem 0;
+  margin-bottom: 0.5rem; /* Add a margin-bottom for spacing */
+}
+
+.footer .box-container .box p {
+  /* Adjust styling for the paragraph */
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+  margin-bottom: 1.5rem; /* Add a margin-bottom for spacing */
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  margin-bottom: 0.5rem; /* Add a margin-bottom for spacing */
+}
+
+.footer .box-container .box a:hover {
+  color: var(--ocean);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--ocean);
+}
+
+/* Inside your style.css file */
+
+.footer .box-container .box {
+  text-align: left;
+  margin-left: 20px; /* Adjust the margin-left value as needed */
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--ocean);
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--ocean);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--ocean);
+}
+
+/* Add the styles for the "Connect With Us" box */
+.box .connect-with-us {
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem; /* Adjust the font size as needed */
+  /* Add any additional styles you want for this specific box */
+}
+
+.footer .share{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer .share a{
+  color: var(--ocean);
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  border: .1rem solid var(--ocean);
+  margin: .3rem;
+}
+
+.footer .share a:hover{
+  color: var(--white);
+  background: var(--primary);
+  transform: rotate(360deg);
+}
